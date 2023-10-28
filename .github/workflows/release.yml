@@ -57,6 +57,7 @@ jobs:
         with:
           name: artifact
           path: ./installer.exe
+      - run: tree
       - name: Upload release asset
         uses: tanyagray/upload-release-asset@v1.1.3
         env:
