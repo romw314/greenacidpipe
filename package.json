@@ -1,6 +1,6 @@
 {
 	"name": "greenacidpipe",
-	"version": "0.0.7",
+	"version": "0.0.8",
 	"main": "src/index.js",
 	"repository": "https://github.com/romw314/greenacidpipe",
 	"author": "romw314 <106016361+romw314@users.noreply.github.com>",
