@@ -23,7 +23,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-artifact@v3.1.3
         with:
-          path: ./dist/GreenAcidPipe ${{ github.ref }} Setup.exe
+          path: ./dist/GreenAcidPipe ${{ github.action_ref }} Setup.exe
   draft-release:
     runs-on: ubuntu-latest
     permissions: write-all
@@ -58,5 +58,5 @@ jobs:
         with:
           upload_url: ${{ needs.draft-release.outputs.upload_url }}
           asset_path: ./installer.exe
-          asset_name: GreenAcidPipe ${{ github.ref }} Setup.exe
+          asset_name: GreenAcidPipe ${{ github.action_ref }} Setup.exe
           asset_content_type: application/vnd.microsoft.portable-executable
