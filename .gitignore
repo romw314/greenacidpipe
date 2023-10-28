@@ -1,9 +1,9 @@
 # Build files
 installer/node/
 installer/conemu/
-installer/node.7z/
-installer/conemu.7z/
-installer/GAPInfo.nsh/
+installer/node.7z
+installer/conemu.7z
+installer/GAPInfo.nsh
 installer/node_modules/
 dist/
 licenses.html
