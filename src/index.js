@@ -43,7 +43,7 @@ const artLogo = async () => console.log(chalk.yellow(await art('GreenAcidPipe'))
 const wrapContent = (content, title) => {
 	return `<!-- Site bootstrapped with GreenAcidPipe -->
 <!DOCTYPE html>
-<html><head><title>${title}</title><link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet"/></head><body style="background-color:lightsalmon;color:darkgreen;"><h1>${title} - Made with <a href="https://greenacidpipe.vercel.app">GreenAcidPipe/RedGas</a></h1><div id="site_content">
+<html><head><title>${title}</title><link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous"><script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8" crossorigin="anonymous"></script></head><body style="background-color:lightsalmon;color:darkgreen;"><h1>${title} - Made with <a href="https://greenacidpipe.vercel.app">GreenAcidPipe/RedGas</a></h1><div id="site_content">
 <!-- Start RedGas content -->
 ${content}
 <!-- End RedGas content -->
